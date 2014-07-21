@@ -21,7 +21,7 @@ class Parser
 		this.tokens = Tokenizer.exprTokenizer.getTokens().copy();
 		for (t in tokens)
 		{
-			Sys.println(t);
+			Sys.println(t.token + " -> " + t.value);
 		}
 		lookahead = this.tokens[0];
 		
